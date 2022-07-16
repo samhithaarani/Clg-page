@@ -1,0 +1,307 @@
+body,html{
+     /* Full height */
+  height: 100%;
+}
+.nav {
+  overflow: hidden;
+  background-color: #333;
+}
+body{
+  /* The image used */
+  background-image:linear-gradient(rgba(71, 67, 67, 0.5), rgba(116, 12, 60, 0.5)), url("https://i.pinimg.com/564x/cd/17/83/cd1783ef9fcc4abf075ae1651034c91c.jpg");
+ /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.logo
+{
+    background-image:linear-gradient(rgb(228, 40, 228), rgba(248, 6, 119, 0.5));
+    width: 100%;
+    display: inline-flex;
+    padding: 7px;
+
+}
+.logo h2{
+    color: rgb(56, 44, 56);
+    text-shadow: 12px;
+}
+
+.logo img{
+    width: 70px;
+    height: 70px;
+    border-radius: 25px;
+}
+
+.nav{
+  background-image:linear-gradient(rgb(228, 40, 228),rgb(168, 149, 168)); 
+ 
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+}
+
+.nav ul{
+display: inline-flex;
+list-style: none;
+}
+
+.nav ul li{
+  width:120px;
+  margin:15px;
+  padding:15px;
+}
+
+.nav ul li a
+{
+  text-decoration: none;
+  color:rgb(18, 18, 19);
+  font-weight: bold;
+}
+
+.active, .nav ul li:hover
+{
+background-color:rgba(248, 6, 119, 0.5);
+border-radius: 5px;
+
+}
+
+.inside
+{
+  display: none;
+}
+.nav .icon{
+  display: none;
+}
+
+.nav ul li:hover .inside
+{
+display:block;
+position:absolute;
+background: rgb(184, 136, 152);
+}
+
+@media screen and (max-width: 600px) {
+.nav li:not(:first-child) {display: none;}
+.nav .icon{
+  display: block;
+  position: absolute !important;
+    float: right;
+    
+  }
+  .nav li{
+    display: block;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .nav.responsive {position: relative;}
+  .nav.responsive li a.icon {
+    position: absolute ;
+    right: 0;
+    top: 0;
+  }
+  .nav.responsive li{
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+.nav ul li:hover .inside
+{
+display:block;
+position:absolute;
+background: rgb(184, 136, 152);
+margin-top: 15px;
+margin-left: -15px;
+}
+
+.nav ul li:hover .inside ul{
+  display: block;
+}
+.nav ul li:hover .inside ul li{
+background: transparent;
+text-align: left;
+width:100px;
+border-bottom: 2px dotted rgb(78, 60, 80);
+}
+
+.nav ul li:hover .inside ul li:last-child{
+  border:none;
+}
+
+.nav ul li:hover .inside ul li a:hover{
+ color:rgb(104, 6, 63)
+}
+
+.fa-right
+{
+  float: right;
+}
+
+.inside-in
+{
+  display: none;
+}
+
+
+.hover-me:hover .inside-in{
+position:absolute;
+display: block;
+margin-top: -30px;
+margin-left: 100px;
+background: rgb(184, 136, 152);
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-image:linear-gradient(rgb(228, 40, 228), rgba(248, 6, 119, 0.5));
+  color: white;
+  text-align: center;
+}
+
+.footer p{
+  color: rgb(33, 36, 41);
+  font-weight: bold;
+}
+
+.main div{
+  display: inline-block;
+}
+.main .left{
+  background-image:linear-gradient(rgb(228, 40, 228), rgba(248, 6, 119, 0.5));
+  height: 400px;
+  width: 250px;
+  position: absolute;
+  right: 0;
+
+}
+
+.main .right{
+  background-image:linear-gradient(rgb(228, 40, 228), rgba(248, 6, 119, 0.5));
+  height: 420px;
+  width: 250px;
+  position: absolute;
+  left: 0;
+}
+.main .right p{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+
+.main .left p{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+.middle{
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #bbb;
+  width: 150px;
+  justify-content:space-evenly;
+  vertical-align:middle;
+  content:'';
+  display:inline-block;
+}
+
+
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+.iframe{
+  box-shadow: none !important;
+  }
+
