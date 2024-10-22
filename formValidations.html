@@ -30,34 +30,48 @@
         <div id="d">
             <form action="/smiley.php" method="post" onsubmit="return validate();">
                 <table >
-                    <tr>
-                        <td><label for="fname">First Name:</label></td>
-                        <td><input  name="" id="fname" type="text" required></td>
-                        <td><label id="i1" style="color:red ;visibility: hidden;"><b>*invalid data</b></label></td>
-                    </tr>
-                    <tr>
-                        <td><label for="mname">Middle Name:</label></td>
-                        <td><input type="text" name=""  id="mname" ></td>
-                        <td><label id="i2" style="color:red ;visibility: hidden;"><b>*invalid data</b></label></td>
-                    </tr>
-                    <tr>
-                        <td><label for="lname">Last Name:</label></td>
-                        <td><input  name="" id="lname" type="text" required></td>
-                        <td><label id="i3" style="color:red ;visibility: hidden;"><b>*invalid data</b></label></td>
-                    </tr>
+             
+          
                     <tr>
                         <td><label for="Fname">Full Name</label></td>
                         <td><input type="text" name="" id="Fname" onmouseover="fulname();"></td>
                         <td><label id="i4" style="color:red ;visibility: hidden;"><b>*invalid data</b></label></td>
                     </tr>
-                    <tr>
-                        <td><label for="country">Choose Country:</label></td>
-                        <td><select name="" id="country">
-                            <option id="ind" value="ind">INDIA</option>
-                            <option id="usa" value="usa">USA</option>
-                        </select></td>
-                    </tr>
-                    <tr>
+               <!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
+<!--  If necessary, please modify the charset parameter to specify the        -->
+<!--  character set of your HTML page.                                        -->
+<!--  ----------------------------------------------------------------------  -->
+
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <FORM> element to your page.             -->
+<!--  ----------------------------------------------------------------------  -->
+
+<form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DWU000009tySC" method="POST">
+
+<input type=hidden name="oid" value="00DWU000009tySC">
+<input type=hidden name="retURL" value="https://samhithaarani.github.io/Clg-page">
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+<!--  these lines if you wish to test in debug mode.                          -->
+<!--  <input type="hidden" name="debug" value=1>                              -->
+<!--  <input type="hidden" name="debugEmail"                                  -->
+<!--  value="gayathri.arani@forsysinc.com">                                   -->
+<!--  ----------------------------------------------------------------------  -->
+
+<label for="first_name">First Name</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br>
+
+<label for="last_name">Last Name</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br>
+
+<label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+
+<label for="country">Country</label><input  id="country" maxlength="40" name="country" size="20" type="text" /><br>
+
+<input type="submit" name="submit">
+     <tr>
                         <td><label for="phNo">Phone Number:</label></td>
                         <td><input  name="" id="phNo" type="text" required></td>
                         <td><label id="i5" style="color:red ;visibility: hidden;"><b>*invalid data</b></label></td>
@@ -92,11 +106,7 @@
                         <td><input type="file" name="" id="image" accept="image/jpg/png"></td>
                         <td><label id="i7" style="color:red ;visibility: hidden;"><b>*invalid data</b></label></td>
                     </tr>
-                    <tr>
-                        <td><label for="email">E-Mail Address:</label></td>
-                        <td><input  name="" id="email" type="text" required></td>
-                        <td><label id="i8" style="color:red ;visibility: hidden;"><b>*invalid data</b></label></td>
-                    </tr>
+           
                     <tr>
                         <td><label for="psw">Password</label></td>
                         <td><input type="password" name="" id="psw"  required></td>
@@ -127,6 +137,9 @@
                         <td><input type="submit" value="SUBMIT"></td>
                     </tr>
                 </table>
+
+</form>
+                   
             </form>
             <br><br><br>     <br>
         <br>
