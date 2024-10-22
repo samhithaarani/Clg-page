@@ -28,15 +28,10 @@
     <center>
         <h1 style="color: black;"><i>REGISTRATION FORM</i></h1>
         <div id="d">
-            <form action="/smiley.php" method="post" onsubmit="return validate();">
                 <table >
              
           
-                    <tr>
-                        <td><label for="Fname">Full Name</label></td>
-                        <td><input type="text" name="" id="Fname" onmouseover="fulname();"></td>
-                        <td><label id="i4" style="color:red ;visibility: hidden;"><b>*invalid data</b></label></td>
-                    </tr>
+             
                <!--  ----------------------------------------------------------------------  -->
 <!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
 <!--  If necessary, please modify the charset parameter to specify the        -->
@@ -61,16 +56,28 @@
 <!--  <input type="hidden" name="debugEmail"                                  -->
 <!--  value="gayathri.arani@forsysinc.com">                                   -->
 <!--  ----------------------------------------------------------------------  -->
+<tr>
+    <td>
+        <label for="first_name">First Name</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br>
+    </td>
+    <td>
+        <label for="last_name">Last Name</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br>
+    </td>
+    <td>
+        <label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+    </td>
 
-<label for="first_name">First Name</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br>
+<td>
+    <label for="country">Country</label><input  id="country" maxlength="40" name="country" size="20" type="text" /><br>
+</td>
 
-<label for="last_name">Last Name</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br>
+  
+</tr>
 
-<label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
 
-<label for="country">Country</label><input  id="country" maxlength="40" name="country" size="20" type="text" /><br>
 
-<input type="submit" name="submit">
+
+
      <tr>
                         <td><label for="phNo">Phone Number:</label></td>
                         <td><input  name="" id="phNo" type="text" required></td>
@@ -134,7 +141,8 @@
                         <br>
                         <br>
                         <td><input type="reset" value="RESET"></td>
-                        <td><input type="submit" value="SUBMIT"></td>
+                        <td> <input type="submit" name="submit"></td>
+                      
                     </tr>
                 </table>
 
